@@ -1,0 +1,35 @@
+@use "./../../../../public/assest/scss/mixins.scss" as *;
+#Booking{
+    color: #fff;
+    background-color: #73281a;
+    form{
+        @include responsive(350){
+            width: 90%;
+        }
+        label{
+            display: block;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        input,textarea{
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        textarea{
+            resize: none;
+            height: 200px;
+        }
+        width: 30%;
+        margin: auto;
+        button{
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 25px;
+            background-color: transparent;
+            color: #fff;
+            padding-block: 5px;
+        }
+    }
+}
